@@ -26,6 +26,7 @@ app.post("/posts", async (req, res) => {
   res.status(201).json({ status: true, message: result });
 });
 
+
 app.all("*", (req, res) =>
   res.status(404).json({ status: false, message: "Page not found" })
 );
